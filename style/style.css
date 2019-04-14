@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('fonts/Georgia/Georgia.eot');
+    src: url('fonts/Georgia/Georgia.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Georgia/Georgia.woff2') format('woff2'),
+    url('fonts/Georgia/Georgia.woff') format('woff'),
+    url('fonts/Georgia/Georgia.ttf') format('truetype'),
+    url('fonts/Georgia/Georgia.svg#Georgia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     font-size: 14px;
     color: #262626;
@@ -61,6 +72,7 @@ a img {
     text-decoration: none;
     color: #303030;
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
 }
 * a:hover{
     text-decoration: none;
@@ -69,9 +81,16 @@ a img {
 }
 * a, h1, h2, h3, h4, h5, h6, p, span{
     color: #303030;
+    font-family: 'Lato', sans-serif;
+}
+p{
+    font-family: 'Georgia';
+    font-style: italic;
+    color: #606060;
 }
 h1{
     font-size: 72px;
+    text-transform: uppercase;
 }
 * button, button:focus, a , a:focus{
     outline: none;
@@ -159,6 +178,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .center-banner-text .lead{
     text-align: center;
     margin-bottom: 40px;
+    font-size: 24px;
 }
 .center-banner-text .btn-primary{
     border-radius: 0;
@@ -233,9 +253,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .text-about-product h2{
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-size: 20px;
 }
 .text-about-product p{
     line-height: 20px;
+    text-transform: uppercase;
 }
 .text-about-product span{
     justify-content: center;
@@ -279,6 +301,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding: 23px 12px;
     width: 100%;
     border-right: none;
+    font-family: 'Georgia';
+    font-style: italic;
 }
 .submit-sign{
     background-color: #f68236;
@@ -308,4 +332,63 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .jcarousel li{
     max-width: 200px !important;
+}
+.inspirations .container{
+    background-color: #ffffff;
+}
+.jcarousel-wrapper{
+    border: none;
+    margin: 0;
+}
+.jcarousel-pagination{
+    display: none;
+}
+.social-list{
+    display: flex;
+    align-items: center;
+}
+.social-item{
+    margin-right: 15px;
+}
+.social-item:last-child{
+    margin-right: 0;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #606060;
+}
+.social-link:hover{
+    background-color: #606060;
+}
+.social-link:hover i{
+    color: #ffffff;
+}
+.social-link i{
+    color: #606060;
+}
+.footer .container{
+    background-color: #ffffff;
+    padding-bottom: 74px;
+    padding-top: 60px;
+}
+.footer .container .col{
+    border-right: 1px solid #eaeaea;
+}
+.footer .container .col:last-child{
+    border-right: none;
+}
+.footer-link:hover{
+    text-decoration: underline;
+}
+.footer-item{
+    padding: 6px 0;
+}
+.footer .container .col h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 9px;
 }
