@@ -291,3 +291,21 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     transition: .3s;
     background-color: #717171;
 }
+.carousel-img{
+    width: 200px;
+    height: 118px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+.carousel-img img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -30%;
+    width: 100%;
+    height: auto !important;
+}
+.jcarousel li{
+    max-width: 200px !important;
+}
