@@ -1,0 +1,252 @@
+*{
+    font-size: 14px;
+    color: #262626;
+}
+body{
+    background-color: #e5e5e5;
+}
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+* a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #303030;
+    cursor: pointer;
+}
+* a:hover{
+    text-decoration: none;
+    transition: .3s;
+    color: #8bc34a;
+}
+* a, h1, h2, h3, h4, h5, h6, p, span{
+    color: #303030;
+}
+h1{
+    font-size: 72px;
+}
+* button, button:focus, a , a:focus{
+    outline: none;
+}
+* h2{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+
+/*------------------style header---------------*/
+
+.header .navbar{
+    border-bottom: 1px solid #e5e5e5;
+}
+.header .container{
+    background-color: #ffffff;
+}
+.search-btn{
+    background-color: #ffffff;
+    border: 1px solid #959595;
+    border-radius: 0;
+}
+.search-btn:hover{
+    background-color: #606060;
+    border: 1px solid #606060;
+}
+.search-btn i{
+    color: #353535;
+}
+.search-btn:hover i{
+    color: #ffffff;
+}
+.wrapper-login{
+    margin-left: 15px;
+}
+.list-login{
+    display: flex;
+    align-items: center;
+}
+.link-login:hover span,
+.link-login:hover i
+{
+    color: #8bc34a;
+}
+.search-control{
+    border-radius: 0;
+    border: 1px solid #959595;
+}
+/*--------------end header style-----------*/
+/*--------------start content style---------*/
+.content-banner .container{
+    position: relative;
+    padding: 0;
+}
+.banner-wrapper{
+    position: relative;
+}
+.center-banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 10;
+
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.center-banner-text .display-4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.center-banner-text .lead{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.center-banner-text .btn-primary{
+    border-radius: 0;
+    border: 1px solid #959595;
+    background-color: transparent;
+    color: #303030;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.center-banner-text .btn-primary:hover{
+    background-color: #606060;
+    color: #ffffff;
+}
+.banner-wrapper .carousel .carousel-control-prev,
+.banner-wrapper .carousel .carousel-control-next{
+    display: none;
+}
+.images{
+    width: 285px;
+    height: 285px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+    cursor: pointer;
+}
+.images:hover img{
+    -webkit-transform: scale(1.2,1.2);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.2,1.2);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+}
+.images-lg{
+    width: 285px;
+    height: 570px;
+}
+.images img{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    text-align: center;
+}
+.product-img .col,
+.product-img .col-sm{
+    padding: 0;
+}
+.product-img .col-sm,
+.product-img .col{
+    max-width: 285px;
+}
+.text-about-product{
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    max-width: 80%;
+    color: #ffffff;
+    padding: 15px;
+}
+.text-about-product h2,
+.text-about-product p{
+    color: #ffffff;
+    text-align: center;
+}
+.text-about-product h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.text-about-product p{
+    line-height: 20px;
+}
+.text-about-product span{
+    justify-content: center;
+    display: flex;
+}
+.text-about-product span:hover{
+    transition: .3s;
+    margin-right: 20px;
+}
+.text-about-product span i{
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
